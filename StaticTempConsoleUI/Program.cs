@@ -26,14 +26,16 @@ namespace StaticTempConsoleUI
                 if (decision == "1")
                 {
                     Console.WriteLine("Enter your Fahrenheit Temp to convert to Celsius ");
-                    int tempF = int.Parse(Console.ReadLine());
+                    double tempF = double.Parse(Console.ReadLine());
                     Console.WriteLine(TempConverter.FahrenheitToCelsius(tempF));
+                    Console.WriteLine(TempConverter.FahrenheitToCelsius1(tempF));
                 }
                 else if (decision == "2")
                 {
                     Console.WriteLine("Enter your Celsius Temp to convert to Fahrenheit ");
-                    int tempC = int.Parse(Console.ReadLine());
+                    double tempC = double.Parse(Console.ReadLine());
                     Console.WriteLine(TempConverter.CelsiusToFahrenheit(tempC));
+                    Console.WriteLine(TempConverter.CelsiusToFahrenheit1(tempC));
                 }
             } while (decision != "3");
         }
